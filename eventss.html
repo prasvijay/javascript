@@ -1,0 +1,32 @@
+<html>
+<body>
+<button id ="btn">Click me</button>
+<p id="para"></p>
+<script>
+
+function fun(){
+btn.style.width="50px";
+btn.style.height="50px";
+btn.style.background="yellow";
+btn.style.color="blue";
+}
+
+function fun1(){
+document.getElementById("para").innerHTML="this is a 2nd function";
+}
+
+function fun2(){
+btn.style.width="";
+btn.style.height="";
+btn.style.background="";
+btn.style.color="";
+}
+
+var mybtn=document.getElementById("btn");
+mybtn.addEventListener("mouseover",fun);
+mybnt.addEventListener("click",fun1);
+mybtn.addEventListener("mouseout",fun2);
+</script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+<div{
+background-color:lightblue;
+border:2px solid red;
+font-size:25px;
+text-align:center;
+}
+span{
+border:2px solid blue;
+}
+</style>
+</head>
+<body>
+<h1>Bubbling</h1>
+<div id="d1">
+this is a div element
+<br><br>
+<span id="s1">this is a span element</span>
+</div>
+<h1>Capturing</h1>
+<div id ="d2">this is a div element
+<br><br>
+<span id="s2">this is a span element</span>
+</div>
+<script>
+document.getElementById("d1").addEventListener("dblclick",function(){alert('you have double clicked on div element')},false);
+document.getElementById("s1").addEventListener("dblclick",function(){alert('you have double clicked on span element')},false);
+document.getElementById("d2").addEventListener("dblclick",function(){alert('you have double clicked on div element')},true);
+document.getElementById("s2").addEventListener("dblclick",function(){alert('you have double clicked on span element')},true);
+
+</script>
+</body>
+</html>

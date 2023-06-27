@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>JS HTML DOM</h2>
+        <p>Finding HTML elements using <b>document.forms</b></p>
+        <form id="frm1" action="/action-page.php">
+            First name :<input type="text" name="fname" value="vijay"><br>
+            Last name :<input type="text" name="lname" value="Prasanna"><br><br>
+            <input type="submit" value="submit">
+        </form>
+        <p>These are the values of each elemenst in the form :</p>
+        <p id="demo"></p>
+        <script>
+            const x=document.forms["frm1"];
+            let text="";
+            for(let i=0;i<x.length;i++)
+            {
+                text += x.elements[i].value+"";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>

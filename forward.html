@@ -1,0 +1,25 @@
+<html>
+    <script>
+        function msg()
+        {
+            history.back();
+        }
+        function goForward()
+        {
+            history.forward();
+        }
+        function go()
+        {
+            history.go(2);
+        }
+        function goneg()
+        {
+            history.go(-2);
+        }
+    </script>
+    <input type="button" value="back" onclick="msg()"/>
+    <input type="button" value="Forward" onclick="goForward()"/>
+    <input type="button" value="go" onclick="go()"/>
+    <input type="button" value="go negative" onclick="goneg()"/>
+
+</html>
